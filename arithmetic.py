@@ -1,10 +1,13 @@
 """Math functions for calculator."""
 
 
-def add(num1, num2):
+def add(num_list):
     """Return the sum of the two input integers."""
 
-    return num1 + num2
+    for num in num_list:
+        num += num
+
+    return num
 
 
 def subtract(num1, num2):

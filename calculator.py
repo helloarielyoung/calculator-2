@@ -18,21 +18,25 @@ def my_calculator():
     calculator_on = True
 
     while calculator_on:
-
+        #get input from the user
         input_string = raw_input()
 
+        #break user input into a list
         tokens = input_string.split(" ")
 
+        #first list item is the mathmatical operator
         operator = tokens[0]
 
-        if len(tokens) > 1:
-            num1 = int(tokens[1])
-            if len(tokens) > 2:
-                num2 = int(tokens[2])
+        #declare variable for our list of numbers
+        num_list = []
+
+        #iterate through tokens and turn list into integers
+        for number in tokens[1:]:
+            num_list.append(int(number)) #Q: what if they submit a decimal?
 
         # Here we start doing the math
         if operator == "+":
-            print add(num1, num2)
+            print add(num_list)
 
         elif operator == "-":
             print subtract(num1, num2)
