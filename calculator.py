@@ -27,7 +27,8 @@ def my_calculator():
 
         if len(tokens) > 1:
             num1 = float(tokens[1])
-            num2 = float(tokens[2])
+            if len(tokens) > 2:
+                num2 = float(tokens[2])
 
         # Here we start doing the math
         if operator == "+":
@@ -39,8 +40,11 @@ def my_calculator():
         elif operator == "*":
             print multiply(num1, num2)
 
-        elif operator == "/":
+        elif operator == "/":   # when adding error checking, check for division by 0
             print divide(num1, num2)
+
+        elif operator == "square":  # consider adding 'or **'
+            print square(num1)
 
         elif operator == 'q':
             calculator_on = False
