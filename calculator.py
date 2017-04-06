@@ -39,6 +39,9 @@ def my_calculator():
         elif operator == "*":
             print multiply(num1, num2)
 
+        elif operator == "/":
+            print divide(num1, num2)
+
         elif operator == 'q':
             calculator_on = False
 
