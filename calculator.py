@@ -33,8 +33,11 @@ def my_calculator():
         if operator == "+":
             print add(num1, num2)
 
-        if operator == "-":
+        elif operator == "-":
             print subtract(num1, num2)
+
+        elif operator == "*":
+            print multiply(num1, num2)
 
         elif operator == 'q':
             calculator_on = False
