@@ -33,10 +33,11 @@ def my_calculator():
         if operator == "+":
             print add(num1, num2)
 
+        if operator == "-":
+            print subtract(num1, num2)
+
         elif operator == 'q':
             calculator_on = False
-            
 
-# tokens = input_string.split(" ")   # => ["pow", "3", "5"]
 
 my_calculator()
