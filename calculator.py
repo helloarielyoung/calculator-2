@@ -46,6 +46,9 @@ def my_calculator():
         elif operator == "square":  # consider adding 'or **'
             print square(num1)
 
+        elif operator == "cube":
+            print cube(num1)
+
         elif operator == 'q':
             calculator_on = False
 
