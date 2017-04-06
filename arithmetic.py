@@ -10,10 +10,14 @@ def add(num_list):
     return num
 
 
-def subtract(num1, num2):
+def subtract(num_list):
     """Return the second number subtracted from the first."""
+    print num_list
 
-    return num1 - num2
+    for num in num_list[::-1]:
+        print "printing num" + str(num)
+        num = num - num
+    return num
 
 
 def multiply(num1, num2):

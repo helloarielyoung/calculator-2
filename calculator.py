@@ -6,6 +6,9 @@ calculator program yourself in this file.
 
 from arithmetic import *
 
+#declare variable for our list of numbers
+num_list = []
+
 # Your code goes here
 def my_calculator():
     """This function performs a mathmatical operation
@@ -27,9 +30,6 @@ def my_calculator():
         #first list item is the mathmatical operator
         operator = tokens[0]
 
-        #declare variable for our list of numbers
-        num_list = []
-
         #iterate through tokens and turn list into integers
         for number in tokens[1:]:
             num_list.append(int(number)) #Q: what if they submit a decimal?
@@ -39,10 +39,10 @@ def my_calculator():
             print add(num_list)
 
         elif operator == "-":
-            print subtract(num1, num2)
+            print subtract(num_list)
 
         elif operator == "*":
-            print multiply(num1, num2)
+            print multiply(num_list)
 
         elif operator == "/":   # when adding error checking, check for division by 0
             print divide(float(num1), num2)
