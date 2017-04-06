@@ -49,6 +49,12 @@ def my_calculator():
         elif operator == "cube":
             print cube(num1)
 
+        elif operator == "pow":  #consider adding 'or ^'?
+            print power(num1, num2)
+
+        elif operator == "mod":
+            print mod(num1, num2)
+
         elif operator == 'q':
             calculator_on = False
 
